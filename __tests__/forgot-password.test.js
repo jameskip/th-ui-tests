@@ -1,8 +1,8 @@
 const { setDefaultOptions } = require( 'expect-puppeteer' )
-
 setDefaultOptions({ timeout: 500 }) // set global assertion timeout
 
 jest.setTimeout(5000) // set global timeout based on network/browser
+
 beforeAll(async () => {
   await page.setViewport({width: 1200, height: 900})
   await page.goto('https://login.thrivehive.com/login')
@@ -12,7 +12,6 @@ beforeEach(async () => {
   page = await browser.newPage();
   await page.goto('https://login.thrivehive.com/login');
 })
-
 
 describe('Forgot password page', () => {
 
@@ -35,4 +34,5 @@ describe('Forgot password page', () => {
     await page.screenshot({ path:'./screenshots/reset-password.png'})
     done()
   })
+
 })
