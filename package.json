@@ -1,0 +1,15 @@
+{
+  "name": "thrivehive-ui-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "jest": {
+    "preset": "jest-puppeteer"
+  },
+  "devDependencies": {
+    "eslint": "6.1.0",
+    "jest": "24.8.0",
+    "jest-puppeteer": "4.3.0",
+    "puppeteer": "1.19.0"
+  }
+}
