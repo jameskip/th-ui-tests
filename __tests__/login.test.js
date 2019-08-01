@@ -1,7 +1,7 @@
 const { setDefaultOptions } = require( 'expect-puppeteer' )
 setDefaultOptions({ timeout: 500 }) // set global assertion timeout
 
-jest.setTimeout(5000) // set global timeout based on network/browser
+jest.setTimeout(10000) // set global timeout based on network/browser
 
 beforeAll(async () => {
   await page.setViewport({width: 1200, height: 900})

@@ -62,3 +62,6 @@ typings/
 
 # Screenshots
 screenshots/
+
+# Reports
+jest-stare/

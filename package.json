@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "report": "jest --reporters default jest-stare"
   },
   "jest": {
     "preset": "jest-puppeteer"
@@ -13,6 +14,7 @@
     "eslint": "6.1.0",
     "jest": "24.8.0",
     "jest-puppeteer": "4.3.0",
+    "jest-stare": "1.17.0",
     "puppeteer": "1.19.0"
   }
 }
